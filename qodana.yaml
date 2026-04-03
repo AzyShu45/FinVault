@@ -1,0 +1,11 @@
+version: "1.0"
+
+# Using the starter profile — covers common Java issues without being too noisy
+profile:
+  name: qodana.starter
+
+# Project is on Java 17, but the CI pipeline runs on JDK 22
+projectJDK: "17"
+
+# JVM Community linter — works well for Spring Boot projects
+linter: jetbrains/qodana-jvm-community:2026.1
